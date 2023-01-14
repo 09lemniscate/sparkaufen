@@ -1,0 +1,26 @@
+<div class="main-container">
+    <section  class="store-list-banner">
+        <div  class="container">
+            <h3 >Whatever discounts you get online,<br > we guarantee an extra 10%</h3>
+            <p > Remember piggy banks? We are a rewarding digital piggy bank.<br > Just start saving up at least 2 weeks before a purchase. </p>
+        </div>
+    </section>
+    <section class="store-list-container">
+    <app-store></app-store>
+    </section>
+    <section class="how-works-container">
+        <app-how-it-works [lists]="howItWorks.LIST" [title]="howItWorks.TITLE"></app-how-it-works>
+    </section>
+    <section class="video-section">
+        <iframe _ngcontent-fwx-c77="" src="https://www.youtube.com/embed/tQPFrglt99Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </section>
+    <section class="you-should-know">
+        <app-how-it-works [lists]="yoiShouldKnow.LIST" [title]="yoiShouldKnow.TITLE"></app-how-it-works>
+    </section>
+    <section class="faq-section">
+        <app-faq></app-faq>
+    </section>
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+</div>

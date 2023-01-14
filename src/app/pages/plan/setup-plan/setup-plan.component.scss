@@ -1,0 +1,225 @@
+.main-container {
+  margin-top: 5.2rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  .plan-container {
+    max-width: 682px;
+    margin: 3rem auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.7rem 2rem;
+    .product-info {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 0rem 0 2rem;
+      border-bottom: 1px solid #a7b6bf;
+      .product-img {
+        width: 180px;
+        margin-right: 1rem;
+        img {
+          border-radius: 16px;
+        }
+      }
+      .product-details {
+        width: calc(100% - 168px);
+      }
+    }
+    .plan-setup {
+      width: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #a7b6bf;
+      .setup-label {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        margin: 2rem 0 8px;
+      }
+      .value-sector {
+        position: relative;
+      }
+      mat-slider {
+        width: 100%;
+      }
+      .currency-sliderval {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .action-container {
+      .plan-btn {
+        width: 100%;
+        margin: 1.6rem 0 0;
+      }
+    }
+    .saving-plan {
+      .progress-legend {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        .legend {
+          margin-left: 8px;
+          .circle-yellow {
+            background: #ddb726;
+          }
+          .circle-green {
+            background: #a1ddb2;
+          }
+          .circle {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: relative;
+            top: 6px;
+            margin: 8px;
+          }
+        }
+      }
+      .progress-bar {
+        width: 100%;
+        border-radius: 30px;
+        display: flex;
+        border: 1px solid #a7b6bf;
+        padding: 4px;
+
+        .investment-container {
+          border-radius: 30px;
+          border: 6px solid #fff;
+          width: 70%;
+          position: relative;
+          left: -20px;
+          .investment {
+            width: calc(100% - 12px);
+            background: #a1ddb2;
+            border-right: 30px;
+            padding: 6px 1rem;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: right;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+        }
+        .rewards-container {
+          border-radius: 30px;
+          border: 6px solid #fff;
+          background: #fff;
+          width: 30%;
+          z-index: 1;
+          .rewards {
+            padding: 6px 1rem;
+            background: #ddb726;
+            width: calc(100% - 32px);
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            z-index: 1;
+          }
+        }
+      }
+      .plan-val {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 51px;
+        position: relative;
+        .currency-label {
+          position: absolute;
+          left: 12px;
+          top: 0.8rem;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 26px;
+        }
+        .slider-value {
+          border: 1px solid #a7b6bf75;
+          border-radius: 16px;
+          width: 116px;
+          padding: 8px 0rem 8px 2.5rem;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 26px;
+          color: #000;
+          margin-bottom: 1rem;
+        }
+        .save-edit-btn {
+          font-size: 17px;
+          padding: 16px;
+          cursor: pointer;
+        }
+        .save-check-btn {
+          font-size: 17px;
+          padding: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    .plan-container {
+      margin: 2rem 16px;
+      padding: 2rem 1rem;
+      .product-info {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+        border-bottom: 1px solid #a7b6bf;
+        .product-img {
+          width: 120px;
+          margin-right: 1rem;
+          img {
+            border-radius: 16px;
+          }
+        }
+        .product-details {
+          width: calc(100% - 120px);
+          h4 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+      .plan-setup {
+        .setup-label {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 22px;
+        }
+        .value-sector {
+            position: relative;
+        }
+        .currency-sliderval {
+            display: flex;
+            justify-content: space-between;
+        }
+      }
+      .saving-plan {
+        .plan-val {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            position: relative;
+            .save-edit-btn,.save-check-btn {
+                font-size: 14px;
+                padding: 16px;
+                cursor: pointer;
+            }
+        }
+        .progress-legend {
+            display: flex;
+            font-size: 12px;
+            line-height: 22px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.main-container {
+    margin-top: 5.2rem;
+    overflow: hidden;
+
+    .store-list-banner {
+        background: #FCF8E9;
+        text-align: center;
+        z-index: 9;
+        position: relative;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .container {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+
+            h3 {
+                max-width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                font-family: Vollkorn;
+                font-style: normal;
+                line-height: 50px;
+                font-weight: 400;
+            }
+            p {
+                font-size: 20px;
+                line-height: 35px;
+            }
+        }
+    }
+    .store-list-container {
+        background: #fff;
+        position: relative;
+        z-index: 2;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .how-works-container, .faq-section {
+        background-color: #fff;
+    }
+    .video-section {
+        text-align: center;
+        background: #fff;
+        position: relative;
+        padding-bottom: 26rem;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+.main-container {
+    margin-top: 4.4rem;
+    .store-list-banner {
+        padding-top: 2.6rem;
+        padding-bottom: 2.6rem;
+        .container {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+    .video-section {
+        text-align: center;
+        background: #fff;
+        position: relative;
+        padding-bottom: 16rem;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+
+
+}

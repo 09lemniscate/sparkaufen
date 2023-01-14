@@ -1,0 +1,75 @@
+<div class="main-container">
+  <section class="plan-container">
+    <div class="product-info">
+      <div class="product-img">
+        <img
+          src="https://s3.eu-central-1.amazonaws.com/club.neosave.images/live-stores/3e2e4c38-59b0-4320-a8a4-d680e947be2d/thumbnail.png"
+        />
+      </div>
+      <div class="product-details">
+        <h4 class="fm-secondary h4-light">
+          Configure your Piggy Bank for purchase from Unu Motors Store
+        </h4>
+      </div>
+    </div>
+    <div class="plan-setup">
+      <div class="setup-label">Set savings goal </div>
+      <div class="value-sector">
+        <div>
+          <mat-slider [max]="max"
+          [min]="min"
+          [step]="step" (input)="onInputChange($event)">
+          </mat-slider>
+        </div>
+      </div>
+      <div class="currency-sliderval text-default">
+        <div>€ 1000</div>
+        <div>€ 4000</div>
+      </div>
+    </div>
+
+    <div class="saving-plan pt-1">
+      <div class="text-default pt-1 pb-1 fw_400">
+        Your Unu Motors Piggy Bank will have
+      </div>
+      <div class="plan-val">
+        <div *ngIf="hideInput">
+          € {{value}}
+          <span class="save-edit-btn">
+            <mat-icon
+              role="img"
+              class="mat-icon"
+              aria-hidden="true"
+              (click)="hideInput = !hideInput">edit</mat-icon
+            >
+          </span>
+        </div>
+        <div *ngIf="!hideInput" >
+            <label class="currency-label">€</label>
+            <input type="number" class="slider-value" max="" matSliderThumb (change)="onInputChange($event)" [(ngModel)]="value">
+            <span class="save-check-btn">
+                <mat-icon role="img" class="mat-icon" aria-hidden="true"  (click)="hideInput = !hideInput">check</mat-icon></span>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="rewards-container">
+          <div class="rewards">€ {{minValue}}</div>
+        </div>
+        <div class="investment-container">
+          <div class="investment">€ {{maxValue}}</div>
+        </div>
+      </div>
+      <div class="progress-legend">
+        <div class="legend">
+          <span class="circle circle-yellow">&nbsp;</span> Cash Rewards
+        </div>
+        <div class="legend">
+          <span class="circle circle-green">&nbsp;</span> Your savings amount
+        </div>
+      </div>
+    </div>
+    <div class="action-container">
+      <button class="plan-btn btn-black">Continue</button>
+    </div>
+  </section>
+</div>

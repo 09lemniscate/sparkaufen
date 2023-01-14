@@ -1,0 +1,281 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    background: #eee;
+    color: #231f20;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+b {
+    color: #231f20;
+}
+img {
+    width: 100%;
+}
+section {
+    padding: 3rem 7rem;
+}
+h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+}
+button {
+    font-family: Poppins;
+    font-size: 17px;
+}
+iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 720px;
+    height: 420px;
+    margin: 0 auto;
+}
+  
+  .modern-heading {
+    padding-bottom: 5px;
+  }
+  .sub-light_22 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: left;
+    color: #231f20;
+  }
+  .modern-heading:before {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #ddb726;
+    width: 70px;
+    position: relative;
+    bottom: 6px;
+  }
+  .mat-expansion-panel {
+    font-family: Poppins!important;
+    border: 1px solid rgba(167,182,191,.5);
+    border-radius: 24px!important;
+    padding: 1rem;
+    margin: 1rem 0 !important;
+    box-shadow: none!important;
+}
+.mat-expansion-panel-header {
+    height: 48px;
+}
+.mat-expansion-panel-header {
+    background: none!important;
+}
+.mat-expansion-panel-header {
+    font-size: 15px;
+    font-weight: 400;
+}
+.mat-expansion-panel {
+    background: #fff;
+    color: #000000de;
+}
+.mat-expanded {
+    background: rgba(167,182,191,.2);
+}
+.mat-expanded {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+.mat-expansion-panel-content {
+    letter-spacing: normal;
+}
+.mat-expansion-panel-body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: Poppins;
+    color: #4a4a4a;
+}
+ .mat-expansion-panel-body {
+    padding: 0 24px!important;
+}
+.mat-expansion-indicator {
+    border: 1px solid #000;
+    border-radius: 50%!important;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+.mat-expansion-indicator:after {
+    margin-top: -6px!important;
+}
+.accordion {
+    margin: 1em auto;
+    max-width: 30em;
+}
+.option {
+    position: relative;
+    margin-bottom: 1em;
+}
+.toggle {
+    display: none;
+}
+.title {
+    background: none;
+    padding: 1em;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.title, .content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all .2s;
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+}
+.title ul, .content ul {
+    margin-left: 1rem;
+}
+.title ul li, .content ul li {
+    padding: 0.6rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    list-style: none;
+}
+.title ul li span, .content ul li span {
+    display: inline-block;
+}
+.title ul li span img, .content ul li span img {
+    position: relative;
+    top: 4px;
+    right: 8px;
+    left: 4px;
+}
+.title ul li a, .content ul li a {
+    color: #fff;
+}
+.title:after, .title:before {
+    content: "";
+    position: absolute;
+    right: 1.25em;
+    top: 1.25em;
+    width: 2px;
+    height: 0.75em;
+    background-color: #fff;
+    transition: all .2s;
+}
+.title:after {
+    transform: rotate(90deg);
+}
+.title ul li .text, .content ul li .text {
+    margin-left: 2rem;
+}
+.toggle:checked + .title + .content {
+    max-height: 500px;
+}
+h3 {
+    font-weight: 700;
+    font-size: 38px;
+}
+.fm-secondary {
+    font-family: Vollkorn;
+    font-style: normal;
+}
+.h4-light {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+.title ul li span img, .content ul li span img {
+    position: relative;
+    top: 4px;
+    right: 8px;
+    left: 4px;
+}
+@media (max-width: 480px) {
+    .main-container {
+        margin-top: 4.4rem;
+    }
+section {
+    padding: 2rem 1rem;
+}
+iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    right: 16px;
+    width: calc(100% - 32px);
+    height: 250px;
+}
+}
+.mat-slider-horizontal {
+    height: 48px;
+    min-width: 128px;
+}
+.btn-black {
+    background: #231F20;
+    border: 1px solid #231F20;
+    border-radius: 100px;
+    color: #fff;
+    padding: 1rem 4rem;
+    cursor: pointer;
+}
+.pt-1 {
+    padding-top: 16px;
+}
+.pb-1 {
+    padding-bottom: 16px;
+}
+
+.pt-1 {
+    padding-top: 16px;
+}
+.fw_400 {
+    font-weight: 400!important;
+}
+.text-default {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 26px;
+}
+.mat-slider-horizontal .mat-slider-track-background {
+    height: 2px;
+    width: 100%;
+    transform: scaleX(1);
+}
+.mat-slider-horizontal .mat-slider-track-fill {
+    height: 5px !important;
+    background: #000;
+}
+.mat-slider-horizontal .mat-slider-track-wrapper {
+    height: 5px!important;
+    width: 100%;
+}
+.mat-slider-horizontal .mat-slider-track-background {
+    height: 5px!important;
+    background: #A7B6BF;
+}
+.mat-slider.mat-accent .mat-slider-thumb {
+    background: #fff;
+    right: -15px;
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    border: 8px solid #000;
+    box-shadow: 1px 8px 3px #00000003, 1px 4px 3px #0000000d, 0 2px 2px #00000017, 0 0 1px #0000001a, 0 0 #0000001a;
+}

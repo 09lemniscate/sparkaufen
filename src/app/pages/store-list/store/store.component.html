@@ -1,0 +1,15 @@
+<div class="brands-list-container">
+    <h4 class="heading">Checkout these amazing brands</h4>
+    <ul>
+         <li *ngFor="let list of lists">
+                <div class="brand-image">
+                    <img  src={{list.imageUrls[2]?.url}}>
+                </div>
+                <span class="brands-saving"><b>€333</b> rewards </span>
+                <div class="brands-name">{{list.name}}</div>
+        </li>
+    </ul>
+    <div style="text-align: center;">
+        <button  class="btn-black">Show more brands</button>
+    </div>
+</div>
